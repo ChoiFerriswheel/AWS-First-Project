@@ -53,8 +53,21 @@ GitHub → GitHub Actions → S3 → CloudFront → User
 # 4. 사이트 확인
 
 
-🛠 Tech Stack
-<div align="center"> <img src="https://img.shields.io/badge/EC2-black?style=flat-square&logo=amazonaws"/> <img src="https://img.shields.io/badge/S3-red?style=flat-square&logo=amazon-s3"/> <img src="https://img.shields.io/badge/CloudFront-blue?style=flat-square&logo=amazonaws"/> <img src="https://img.shields.io/badge/Nginx-green?style=flat-square&logo=nginx"/> <img src="https://img.shields.io/badge/Linux-yellow?style=flat-square&logo=linux"/> <img src="https://img.shields.io/badge/GitHub Actions-black?style=flat-square&logo=githubactions"/> </div>
+## 🛠 Tech Stack
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/EC2-black?style=flat-square&logo=amazonaws"/>
+<img src="https://img.shields.io/badge/S3-red?style=flat-square&logo=amazon-s3"/>
+<img src="https://img.shields.io/badge/CloudFront-blue?style=flat-square&logo=amazonaws"/>
+
+<br/>
+
+<img src="https://img.shields.io/badge/Nginx-green?style=flat-square&logo=nginx"/>
+<img src="https://img.shields.io/badge/Linux-yellow?style=flat-square&logo=linux"/>
+<img src="https://img.shields.io/badge/GitHub Actions-black?style=flat-square&logo=githubactions"/>
+
+</div>
 
 
 📬 Contact
