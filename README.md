@@ -1,91 +1,62 @@
-# 🚀 AWS EC2 Web Server Project
+<div align="center">
 
-> AWS EC2와 Nginx를 활용하여 웹 서버를 구축하고,
-> 도메인 연결 및 HTTPS 보안 설정까지 완료한 프로젝트입니다.
+# 🚀 AWS Cloud Deployment Project
 
----
+### _Static Web + CDN + CI/CD_
 
-## 📌 프로젝트 소개
+<br/>
 
-AWS 클라우드 환경에서 EC2 인스턴스를 생성하고,
-Nginx 웹 서버를 활용하여 HTML 페이지를 배포하였습니다.
+<img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws"/>
+<img src="https://img.shields.io/badge/S3-Storage-red?style=for-the-badge&logo=amazon-s3"/>
+<img src="https://img.shields.io/badge/CloudFront-CDN-blue?style=for-the-badge&logo=amazonaws"/>
+<img src="https://img.shields.io/badge/GitHub-Actions-black?style=for-the-badge&logo=githubactions"/>
 
-또한 도메인 연결(DNS 설정)과 SSL 인증서 적용을 통해
-외부에서 안전하게 접속 가능한 웹 서비스를 구축했습니다.
-
----
-
-## 🛠 사용 기술
-
-* **AWS EC2**
-* **Amazon Linux 2023**
-* **Nginx (Web Server)**
-* **HTML**
-* **Let's Encrypt (SSL 인증서)**
-* **DNS (가비아)**
-
----
-
-## 🌐 배포 링크
+<br/><br/>
 
 👉 https://www.choiferriswheel.com
 
----
-
-## 🚀 구현 과정
-
-1. AWS EC2 인스턴스 생성 및 서버 환경 구축
-2. Nginx 설치 및 웹 서버 구성
-3. HTML 페이지 작성 및 서버 배포
-4. 가비아 도메인 구매 및 DNS A 레코드 설정
-5. Let's Encrypt를 통한 SSL 인증서 발급
-6. HTTP → HTTPS 리다이렉트 설정
+</div>
 
 ---
 
-## 🔒 HTTPS 적용
+## 📌 About
 
-* Let's Encrypt를 활용하여 SSL 인증서 적용
-* Nginx 설정을 통해 HTTP 요청을 HTTPS로 자동 리다이렉트 처리
+이 프로젝트는 AWS 기반으로 웹 서비스를 배포하고,  
+**자동 배포(CI/CD)와 CDN을 적용한 클라우드 구조를 직접 구축**한 프로젝트입니다.
 
----
-
-## 💡 배운 점
-
-* 클라우드 환경에서의 서버 구축 및 운영 경험
-* 웹 서버(Nginx)의 동작 원리 이해
-* 리눅스 기반 서버 관리 및 명령어 활용
-* DNS 설정 및 도메인 연결 과정 이해
-* HTTPS 적용을 통한 보안 구성 경험
+기존 EC2 기반 서버 방식에서 시작하여,  
+S3 + CloudFront 구조로 확장하며  
+**실제 서비스 운영 방식에 가까운 환경을 구현했습니다.**
 
 ---
 
-## ⚠️ 트러블슈팅
+## ⚙️ Features
 
-### 1. DNS 전파 지연 문제
-
-* 도메인 연결 후 즉시 접속이 되지 않는 문제 발생
-* DNS 전파 시간으로 인해 발생한 현상으로 확인 후 해결
-
-### 2. SSL 인증서 발급 실패
-
-* Nginx 설정(server_name) 오류로 인증서 적용 실패
-* 설정 수정 후 정상 발급 완료
-
-### 3. HTTPS 접속 불가 문제
-
-* AWS 보안 그룹에서 443 포트 미개방 상태
-* 인바운드 규칙 추가 후 해결
-
-👉 위 문제들을 로그 분석 및 설정 수정으로 해결하며
-실제 운영 환경에서의 문제 해결 경험을 쌓았습니다.
+- ✅ EC2 + Nginx 웹 서버 구축
+- ✅ S3 정적 웹 호스팅
+- ✅ CloudFront CDN + HTTPS 적용
+- ✅ GitHub Actions 자동 배포
+- ✅ 도메인 연결 (www / root 처리)
 
 ---
 
-## 📊 결과
+## 🏗 Architecture
 
-* EC2 기반 웹 서버 구축 완료
-* 도메인 연결 및 HTTPS 적용 완료
-* 외부에서 안전하게 접속 가능한 웹 서비스 운영
+```text
+GitHub → GitHub Actions → S3 → CloudFront → User
 
----
+
+🧪 Usage
+# 1. index.html 수정
+# 2. GitHub에 commit
+# 3. 자동 배포 실행
+# 4. 사이트 확인
+
+
+🛠 Tech Stack
+<div align="center"> <img src="https://img.shields.io/badge/EC2-black?style=flat-square&logo=amazonaws"/> <img src="https://img.shields.io/badge/S3-red?style=flat-square&logo=amazon-s3"/> <img src="https://img.shields.io/badge/CloudFront-blue?style=flat-square&logo=amazonaws"/> <img src="https://img.shields.io/badge/Nginx-green?style=flat-square&logo=nginx"/> <img src="https://img.shields.io/badge/Linux-yellow?style=flat-square&logo=linux"/> <img src="https://img.shields.io/badge/GitHub Actions-black?style=flat-square&logo=githubactions"/> </div>
+
+
+📬 Contact
+GitHub: https://github.com/ChoiFerriswheel
+Tel : 010 - 7635 - 6216
